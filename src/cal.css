@@ -1,0 +1,163 @@
+/* .calendar {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  } */
+  /* .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  } */
+  
+  
+  /* .month-year {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+  } */
+  
+  /* .weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+   */
+  /* .weekdays > div {
+    text-align: center;
+  } */
+  
+  /* .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  } */
+  
+  /* .days > div {
+    text-align: center;
+    cursor: pointer;
+  } */
+  
+  /* .days > div:hover {
+    background-color: #f0f0f0;
+  }
+   */
+
+  
+/* 
+  .nav-button {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+  } */
+  
+  /* .month-year {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+  } */
+  
+  /* .weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  } */
+  
+  /* .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  } */
+  
+  /* .day {
+    text-align: center;
+  } */
+
+
+
+
+  @import 'tailwindcss/base';
+  @import 'tailwindcss/components';
+  @import 'tailwindcss/utilities';
+
+
+  .calendar {
+    max-width: 300px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #3d3c3c;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background-color: #3d3c3c;
+    /* border-bottom: 1px solid #ccc; */
+  }
+  
+  .nav-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .month-year {
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 4px;
+    background-color: #3d3c3c;
+    /* border-bottom: 1px solid #ccc; */
+    color: #fff;
+  }
+  
+  .weekdays > div {
+    text-align: center;
+  }
+  
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    padding: 4px;
+  }
+  
+  .day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background-color: #3d3c3c;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .day:hover {
+    background-color: #f0f0f0;
+    color: #3d3c3c;
+
+  }
+  
+  .day.selected {
+    background-color: #f0f0f0;
+    color: #3d3c3c;
+  }
+  
+  p {
+    margin-top: 10px;
+  }
+  
